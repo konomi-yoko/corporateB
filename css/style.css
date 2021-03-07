@@ -1,5 +1,5 @@
 body {
-	font-family: 'Noto Sans CJK JP', sans-serif;
+	font-family: 'mplus-2p-medium', sans-serif;
 	color: #2c2b2c;
 	font-size: 14px;
 	line-height: 14px;
@@ -24,7 +24,56 @@ button:hover {
 
 
 /*--------------header--------------*/
+header {
+	width: 100%;
+	height: 80px;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
 
+.header-wrapper {
+	width: 100%;
+	max-width: 1600px;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 6.25%;
+	margin: 0 auto;
+}
+
+.company-name {
+	padding-top: 26px;
+}
+
+.header-right {
+	padding-top: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.menu-wrapper {
+	width: 700px;
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 16px;
+}
+
+.menu-wrapper li::after {
+	content: "";
+	width: 5px;
+	height: 5px;
+	background: #222;
+	display: inline-block;
+	vertical-align: top;
+	margin: 4px 17px 0;
+}
+
+.menu-wrapper li:last-child::after {
+	content: none;
+}
 
 /*--------------hamburger------------*/
 .hamburger {
@@ -77,10 +126,10 @@ button:hover {
 
 /*---------------drower---------------*/
 .drower {
-  height: 571px;
-  width: 100vw;
-  padding-top: 55px;
-  background-color: #fff;
+	height: 571px;
+	width: 100vw;
+	padding-top: 55px;
+	background-color: #fff;
 	display: block;
 	position: fixed;
 	z-index: 9;
@@ -103,15 +152,63 @@ button:hover {
 
 
 /*-------------mainvisual-------------*/
-.mainvisual {
+.mainvisual-wrapper {
+	max-width: 100%;
+	height: auto;
+	margin-top: 80px;
+	position: relative;
+}
+
+.mainvisual-wrapper {
+	max-width: 100%;
+	height: auto;
+	overflow-x: hidden;
+}
+
+.mainvisual-wrapper img {
 	width: 100%;
 	height: auto;
 }
 
-.mainvisual img {
-	width: 100%;
-	height: auto;
+.swiper-container {
+	width: 90%;
+	height: 100%;
+	overflow: visible;
+	z-index: 1;
 }
+
+.main-left {
+	width: 5%;
+	height: 100%;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 11;
+}
+
+.bg-gray {
+	width: 100%;
+	height: 23%;
+	background: #ededed;
+}
+
+.main-tit {
+	width: 615px;
+	height: 28px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	z-index: 11;
+}
+
+
 
 /*--------------topscroll-btn-------------*/
 .topBtn {
@@ -202,10 +299,14 @@ footer {
 
 /*--------------hamburger--------------*/
 	.hamburger {
-	  display: block;
+		display: block;
 	}
 
 /*--------------header--------------*/
+.header-right	{
+	display: none;
+}
+
 
 /*--------------topscroll-btn-------------*/
 .topBtn {

@@ -76,15 +76,21 @@ $(document).ready(function(){
   });
 });
 
-// nav固定
-jQuery(window).on('scroll', function () {
-    if (jQuery('.js-header-nav').height() < jQuery(this).scrollTop()) {
-        jQuery('.js-header-nav').addClass('change-color');
-        $('.company-name').children('img').attr('src', 'img/company_logoB_pc.png');
-    } else {
-        jQuery('.js-header-nav').removeClass('change-color');
-        $('.company-name').children('img').attr('src', 'img/company_logoW_pc.png');
-    }
+// swiper
+var swiper = new Swiper('.swiper-container', {
+  loop: true,
+    autoplay: {
+    disableOnInteraction: true
+  },
+  delay: 5000,
+  speed: 700,
+  slidesPerView: 'auto',
+  centeredSlides : true,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
 });
 
 
