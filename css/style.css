@@ -1,0 +1,255 @@
+body {
+	font-family: 'Noto Sans CJK JP', sans-serif;
+	color: #2c2b2c;
+	font-size: 14px;
+	line-height: 14px;
+	letter-spacing: 0.8px;
+	position: relative;
+}
+
+.pc { display: block !important; }
+.sp { display: none !important; }
+
+a:hover {
+	opacity: 0.7 ;
+}
+
+a img:hover {
+	opacity: 0.7 ;
+}
+
+button:hover {
+	opacity: 0.7 ;
+}
+
+
+/*--------------header--------------*/
+
+
+/*--------------hamburger------------*/
+.hamburger {
+  display: none;
+  width: 40px;
+  margin-right: 15px;
+  position: absolute;
+  top: 24px;
+  right: 0px;
+}
+
+.hamburger span:after,
+.hamburger span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+}
+
+.hamburger span:after{
+  top: 9px;
+}
+
+.hamburger span {
+  position: relative;
+  display: block;
+}
+
+.hamburger span,
+.hamburger span:after,
+.hamburger span:before {
+  width: 100%;
+  height: 1px;
+  background-color: #222;
+  transition: all 0.5s;
+  backface-visibility: hidden;
+}
+
+.hamburger.on span {
+  background-color: transparent;
+}
+
+.hamburger.on span:before {
+  transform: rotate(32deg) translate(4px, 8px);
+}
+
+.hamburger.on span:after {
+  transform: rotate(-32deg) translate(4px, -8px);
+}
+
+/*---------------drower---------------*/
+.drower {
+  height: 571px;
+  width: 100vw;
+  padding-top: 55px;
+  background-color: #fff;
+	display: block;
+	position: fixed;
+	z-index: 9;
+	display: none;
+}
+
+.drower li {
+	width: 100%;
+	height: 61px;
+	text-align: center;
+	display: block;
+}
+
+.drower li p {
+	height: 100%;
+	border-bottom: 1px solid #ccc;
+	padding-top: 25px;
+	,margin: 0 25px;
+}
+
+
+/*-------------mainvisual-------------*/
+.mainvisual {
+	width: 100%;
+	height: auto;
+}
+
+.mainvisual img {
+	width: 100%;
+	height: auto;
+}
+
+/*--------------topscroll-btn-------------*/
+.topBtn {
+  position:fixed;
+  right: 40px;
+  z-index: 10;
+  bottom: 500px;
+  height:60px;
+}
+
+.topBtn-wrapper {
+	max-width: 1600px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.topBtn-anime-wrapper {
+	display: flex;
+}
+
+.topBtn-anime {
+	transition: .5s ;
+	transform: rotateZ( 0deg ) ;
+}
+
+.topBtn-anime-wrapper:hover .topBtn-anime {
+	transform: rotateZ( 360deg );
+}
+
+.topBtn img {
+	width: 60px;
+	height: 60px;
+}
+
+/*----------------footer----------------*/
+footer {
+	width: 100%;
+	height: 170px;
+	padding-top: 42px; 
+	background: #222;
+	color: #fff;
+	line-height: 14px;
+}
+
+.footer-wrapper {
+	width: 1160px;
+	margin: 0 auto;
+}
+
+.company-name-w {
+	display: block;
+}
+
+.company-name-sp {
+	display: none;
+}
+
+.footer-right { 
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.footer-wrapper ul {
+	width: 680px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 28px;
+}
+
+
+
+/*-------------sp----------------*/
+@media screen and (max-width: 758px) {
+	body {
+		max-width: 750px;
+	font-size: 11px;
+	line-height: 11px;
+	letter-spacing: 0.8px;
+	}
+
+	.pc { display: none !important; }
+	.sp { display: block !important; }
+
+
+
+
+/*--------------hamburger--------------*/
+	.hamburger {
+	  display: block;
+	}
+
+/*--------------header--------------*/
+
+/*--------------topscroll-btn-------------*/
+.topBtn {
+  right: 15px;
+  bottom: 40px;
+  height:40px;
+}
+
+.topBtn-wrapper {
+	width: 100%;
+	max-width: 100vw;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.topBtn-anime-wrapper {
+	display: flex;
+}
+
+.topBtn-anime {
+	transition: .5s ;
+	transform: rotateZ( 0deg ) ;
+}
+
+.topBtn-anime-wrapper:hover .topBtn-anime {
+	transform: rotateZ( 360deg );
+}
+
+.topBtn img {
+	width: 40px;
+	height: 40px;
+}
+
+/*----------------footer----------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+	}
