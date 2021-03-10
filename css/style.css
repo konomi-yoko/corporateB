@@ -208,6 +208,95 @@ header {
 	z-index: 11;
 }
 
+/*------------------topics----------------*/
+.topics-wrapper {
+	width: 100%;
+	height: auto;
+	background: #ededed;
+	padding-bottom: 60px;
+}
+
+.topics-inner {
+	width: 1160px;
+	height: auto;
+	padding-top: 58px;
+	margin: 0 auto;
+}
+
+.topics-content-wrapper {
+	width: 100%;
+	height: auto;
+	padding-top: 39px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.notice-wrapper,.ir-wrapper {
+	width: 550px;
+	height: auto;
+}
+
+.topics-content-wrapper h2 {
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.notice-wrapper ul,.ir-wrapper ul {
+	margin-top: 20px;
+	padding-top: 25px;
+	border-top: 1px solid #aaa;
+}
+
+.topics-content-wrapper .time {
+	font-size: 12px;
+	line-height: 12px;
+	color: #e11a15;
+	margin-bottom: 13px;
+}
+
+.topics-content-wrapper .text {
+	height: 48px;
+	line-height: 24px;
+	margin-bottom: 35px;
+}
+
+.text-link {
+	width: 100%;
+}
+
+.text-link p {
+	width: 160px;
+	height: 34px;
+	line-height: 14px;
+	border-bottom: 1px solid #222;
+	position: relative;
+}
+
+.text-link .linkIcon01 {
+	width: 8px;
+	height: 8px;
+	color: #e11a15;
+	display: inline-block;
+	vertical-align: top;
+	position: absolute;
+	top: 0;
+	right: 20px;
+	transition: transform 0.4s;
+}
+
+.text-link .linkIcon01 {
+	vertical-align: top;
+}
+
+
+.text-link:hover .linkIcon01{
+	transform: translateX(20px);
+}
+
+.topics-wrapper .text-link {
+	display: flex;
+	justify-content: flex-end;
+}
 
 
 /*--------------topscroll-btn-------------*/
