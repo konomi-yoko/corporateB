@@ -289,7 +289,7 @@ header {
 }
 
 
-.text-link:hover .linkIcon01{
+.text-link p:hover .linkIcon01{
 	transform: translateX(20px);
 }
 
@@ -298,6 +298,43 @@ header {
 	justify-content: flex-end;
 }
 
+/*------------------about----------------*/
+.about-wrapper {
+	width: 100%;
+	height: auto;
+	padding: 80px 0;
+	background: url(../img/about_bg_pc.png);
+}
+
+.about-inner {
+	width: 1000px;
+	height: 540px;
+	background: rgba(255, 255, 255, 0.9);
+	padding-top: 80px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about-wrapper h1 {
+	margin-bottom: 40px;
+}
+
+.img-happi {
+	height: auto;
+	margin-bottom: 32px;
+}
+
+p {
+	line-height: 26px;
+	margin-bottom: 55px;
+}
+
+.about-wrapper .text-link {
+	display: flex;
+	justify-content: center;
+}
 
 /*--------------topscroll-btn-------------*/
 .topBtn {
@@ -428,6 +465,8 @@ footer {
 	width: 40px;
 	height: 40px;
 }
+
+
 
 /*----------------footer----------------*/
 
