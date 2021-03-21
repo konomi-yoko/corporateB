@@ -336,6 +336,37 @@ header {
 	justify-content: center;
 }
 
+/*--------------studios-------------*/
+.studios-wrapper {
+	width: 100%;
+	height: auto;
+	background: #ededed;
+}
+
+.studios-inner {
+	width: 1160px;
+	height: auto;
+	padding-top: 59px;
+	margin: 0 auto;
+}
+
+.studios-inner h1 {
+	margin-bottom: 39px;
+}
+
+.studios-list-wrapper {
+	width: 100%;
+	height: auto;
+}
+
+.studios-list-wrapper li {
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+
+
+
 /*--------------topscroll-btn-------------*/
 .service-wrapper {
 	width: 100%;
@@ -405,6 +436,50 @@ header {
 	position: absolute;
 	top: 0;
 	z-index: 0;
+}
+
+/*--------------studios-------------*/
+.studios-wrapper {
+	width: 100%;
+	height: auto;
+	padding-bottom: 70px;
+}
+
+.studios-inner {
+	width: 1160px;
+	height: auto;
+}
+
+.studios-list-wrapper {
+	width: 100%;
+	height: auto;
+}
+
+.studios-list-wrapper li {
+	width: 100%;
+	height: auto;
+	display: flex;
+	margin-bottom: 44px;
+}
+
+.studios-list-wrapper .text-wrapper {
+	width: 100%;
+	height: auto;
+	padding: 109px 43px 0;
+}
+
+.studios-wrapper h2 {
+	font-size: 20px;
+	line-height: 20px;
+	margin-bottom: 23px;
+}
+
+.studios-wrapper .text-wrapper p {
+	margin-bottom: 53px;
+}
+
+.studios-list-wrapper .list02 {
+	flex-direction: row-reverse;
 }
 
 
