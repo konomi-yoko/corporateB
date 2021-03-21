@@ -14,6 +14,12 @@ a:hover {
 	opacity: 0.7 ;
 }
 
+.menu-wrapper a:hover,.topics-content-wrapper a:hover{
+	color: #e11a15;
+}
+
+
+
 a img:hover {
 	opacity: 0.7 ;
 }
@@ -482,6 +488,10 @@ header {
 	flex-direction: row-reverse;
 }
 
+.studios-wrapper .text-link {
+	width: 160px;
+}
+
 /*--------------topscroll-btn-------------*/
 .news-wrapper {
 	width: 100%;
@@ -545,9 +555,46 @@ header {
 }
 
 .news-inner .text-link {
+	width: 160px;
 	margin-left: 500px;
 }
 
+/*--------------recruit-------------*/
+.recruit-wrapper {
+	width: 100%;
+	height: auto;
+	padding: 39px 0 94px;
+}
+
+.recruit-inner {
+	width: 1160px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.recruit-wrapper h1 {
+	margin-bottom: 40px;
+}
+
+.recruit-content {
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+
+.recruit-img {
+	width: 579px;
+	height: auto;
+}
+
+.recruit-text {
+	margin: 109px 0 0 104px;
+	display: flex;
+}
+
+.recruit-text li:first-child {
+	margin-right: 60px;
+}
 
 /*--------------topscroll-btn-------------*/
 .topBtn {
@@ -585,11 +632,12 @@ header {
 /*----------------footer----------------*/
 footer {
 	width: 100%;
-	height: 170px;
+	height: 324px;
 	padding-top: 42px; 
-	background: #222;
+	background: url(../img/footer_bg_pc.png) no-repeat;
+	background-size: cover;
 	color: #fff;
-	line-height: 14px;
+	line-height: 24px;
 }
 
 .footer-wrapper {
@@ -597,29 +645,37 @@ footer {
 	margin: 0 auto;
 }
 
-.company-name-w {
-	display: block;
+.footer-wrapper h1 {
+	margin-bottom: 98px;
 }
 
-.company-name-sp {
-	display: none;
-}
-
-.footer-right { 
+.footer-menu { 
 	width: 100%;
+	margin-bottom: 38px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
 }
 
-.footer-wrapper ul {
-	width: 680px;
+.footer-right {
+	width: 420px;
 	display: flex;
-	justify-content: space-between;
-	margin-bottom: 28px;
+	flex-wrap: wrap;
+	justify-content: flex-end;
 }
 
+.footer-right li {
+	margin-left: 18px;
+}
 
+.footer-right li:first-child {
+	margin-left: 0;
+}
+
+.copyright {
+	width: 100%;
+	text-align: center;
+}
 
 /*-------------sp----------------*/
 @media screen and (max-width: 758px) {
