@@ -297,7 +297,8 @@ header {
 	width: 100%;
 	height: auto;
 	padding: 80px 0;
-	background: url(../img/about_bg_pc.png);
+	background: url(../img/about_bg_pc.png) no-repeat;
+	background-size: cover;
 }
 
 .about-inner {
@@ -323,6 +324,7 @@ header {
 .about-wrapper p {
 	line-height: 26px;
 	margin-bottom: 55px;
+	text-align: center;
 }
 
 .about-wrapper .text-link {
@@ -349,7 +351,6 @@ header {
 }
 
 .service-wrapper h1 {
-	height: auto;
 	margin-bottom: 72px;
 }
 
@@ -358,11 +359,6 @@ header {
 	height: auto;
 	display: flex;
 	justify-content: space-between;
-}
-
-.service-img {
-	width: auto;
-	height: auto;
 	margin-bottom: 38px;
 }
 
@@ -401,7 +397,6 @@ header {
 	z-index: 0;
 }
 
-/*--------------studios-------------*/
 /*--------------studios-------------*/
 .studios-wrapper {
 	width: 100%;
@@ -458,7 +453,7 @@ header {
 	justify-content: flex-end;
 }
 
-/*--------------topscroll-btn-------------*/
+/*--------------news-------------*/
 .news-wrapper {
 	width: 100%;
 	height: auto;
@@ -800,6 +795,179 @@ h1 img {
 	display: flex;
 	justify-content: center;
 }
+
+/*------------------about----------------*/
+.about-wrapper {
+	width: 100%;
+	height: auto;
+	padding: 51px 4%;
+	background: url(../img/about_bg_sp.png) no-repeat;
+	background-size: cover;
+}
+
+.about-inner {
+	width: 100%;
+	height: auto;
+	padding: 30px 6.6% 0;
+}
+
+.about-wrapper h1 {
+	margin-bottom: 30px;
+}
+
+.img-happi {
+	width: 77.86666vw;
+	height: auto;
+	margin-bottom: 26px;
+}
+
+.img-happi img {
+	width: 100%;
+	height: auto;
+}
+
+.about-wrapper p {
+	line-height: 18px;
+	margin-bottom: 30px;
+}
+
+.service-bg {
+	height: 200px;
+}
+
+/*--------------studios-------------*/
+.studios-wrapper {
+	width: 100%;
+	height: auto;
+	background: #ededed;
+	padding-bottom: 0;
+}
+
+.studios-inner {
+	width: 100%;
+	padding-top: 30px;
+}
+
+.studios-inner h1 {
+	margin-bottom: 26px;
+	padding-left: 4%;
+}
+
+.studios-list-wrapper li {
+	display: block;
+	margin-bottom: 0;
+}
+
+.studios-list-wrapper .img-wrapper {
+	padding-right: 8%;
+}
+
+.studios-list-wrapper .list02 .img-wrapper {
+	padding-right: 0;
+	padding-left: 8%;
+}
+
+.studios-list-wrapper li img {
+	width: 100%;
+	height: auto;
+}
+
+.studios-list-wrapper .text-wrapper {
+	width: 100%;
+	height: auto;
+	padding: 20px 4% 0;
+}
+
+.studios-wrapper h2 {
+	font-size: 16px;
+	line-height: 16px;
+	margin-bottom: 29px;
+}
+
+.studios-wrapper .text-wrapper p {
+	line-height: 20px;
+	margin-bottom: 40px;
+}
+
+/*--------------topscroll-btn-------------*/
+.news-wrapper {
+	padding: 40px 4% 0;
+}
+
+.news-inner {
+	width: 100%;
+}
+
+.news-content {
+	display: block;
+}
+
+.news-wrapper h1 {
+	width: 14.4vw;
+	height: auto;
+	padding-top: 0;
+}
+
+.news-list-wrapper {
+	width: 100%;
+	padding: 10px 0;
+	margin-bottom: 42px;
+}
+
+
+/*--------------topscroll-btn-------------*/
+.service-wrapper {
+	height: 274.53333vw;
+	padding: 39px 0 0;
+}
+
+.service-inner {
+	width: 100%;
+	padding: 0 4%;
+}
+
+.service-wrapper h1 {
+	margin-bottom: 39px;
+}
+
+.service-img {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-bottom: 30px;
+}
+
+.service-img img {
+	width: 100%;
+	height: auto;
+}
+
+.service-img li {
+	margin-bottom: 12px;
+}
+
+.service-btn {
+	display: block;
+}
+
+.service-btn li {
+	margin-bottom: 21px;
+}
+
+.service-btn li div {
+	margin-bottom: 12px;
+}
+
+.service-btn .text-link p {
+	width: 135px;
+	height: 14px;
+	border-bottom: none;
+}
+
+.service-btn li:last-child .text-link p {
+	width: 187px;
+}
+
 
 
 /*--------------topscroll-btn-------------*/
