@@ -76,24 +76,6 @@ $(document).ready(function(){
   });
 });
 
-// swiper
-var swiper = new Swiper('.swiper-container', {
-  loop: true,
-    autoplay: {
-    disableOnInteraction: true
-  },
-  delay: 5000,
-  speed: 700,
-  slidesPerView: 'auto',
-  centeredSlides : true,
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true,
-  },
-});
-
-
 
 }});
 // レスポンシブここまで
@@ -102,7 +84,7 @@ var swiper = new Swiper('.swiper-container', {
 $(function() {
   $('#drower-btn').on('click',function(){
     $(this).toggleClass('on');
-    $(".drower").slideToggle(300);
+    $(".drower").toggleClass('on');
   });
   $('.drower a').on('click', function(){
       $('#drower-btn').click();
@@ -121,16 +103,19 @@ $(function(){
   });
 });
 
-// 画像スクロール時アニメーション
-// $(function(){
-//   $(window).on('load scroll',function (){
-//     $('.animation').each(function(){
-//       var target = $(this).offset().top;
-//       var scroll = $(window).scrollTop();
-//       var height = $(window).height();
-//       if (scroll > target - height){
-//         $(this).addClass('active');
-//       }
-//     });
-//   });
-// });
+// swiper
+var swiper = new Swiper('.swiper-container', {
+  loop: true,
+    autoplay: {
+    disableOnInteraction: true
+  },
+  delay: 5000,
+  speed: 1000,
+  slidesPerView: 'auto',
+  centeredSlides : true,
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true,
+  },
+});
